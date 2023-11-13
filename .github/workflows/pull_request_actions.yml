@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
   pull_request: 
     branches:
       - main
@@ -24,7 +25,7 @@ concurrency: reinevent-takeaway    # This wills ensure only a single workflow of
 jobs:
   kics:
     # Kics perform statics codes analysis of Infrastructure of Code (Terraform).
-    # More details can be found here: https://docs.kics.io/latest/
+    # More details can be found here:https://docs.kics.io/latest/
     name: "Run Kics scan on Terraform code"
     uses: ./.github/workflows/terraform_kics.yml
     with:
