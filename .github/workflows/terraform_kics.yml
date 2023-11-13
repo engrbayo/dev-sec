@@ -26,7 +26,7 @@ jobs:
         path: ${{ inputs.WORKING_DIRECTORY }}
         token: ${{ secrets.GITHUB_TOKEN }}
         output_path: myResults/
-        fail_on : high,medium
+        #fail_on : high,medium
         #ignore_on_exit: results
         enable_comments: ${{ inputs.ENABLE_COMMENTS }}
 
