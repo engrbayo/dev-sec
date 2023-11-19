@@ -3,11 +3,11 @@ terragrunt_version_constraint = "~> 0.40.0"
 remote_state {
   backend = "s3"
   config = {
-    bucket         = "cloudsentrics-bucket144"
+    bucket         = "second-sentrick"
     key            = "${path_relative_to_include()}/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "us-east-2"
     encrypt        = true
-    dynamodb_table = "my-lock-table"
+    dynamodb_table = "second-db-table"
   }
 }
 
